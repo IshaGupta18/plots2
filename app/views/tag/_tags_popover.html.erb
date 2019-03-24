@@ -1,4 +1,4 @@
-<div class="main_div">
+<div class="pop-content">
   <p class="small_heading"> Follow related tags: </p>
   <%= form_with remote: true, url: '/subscribe/multiple/tag' do |f| %>
     <% tags.each do |tag| %>
@@ -10,12 +10,8 @@
   <% end %>
 </div>
 <style>
-  .main_div{
-  margin: 10px;
-  margin-right: 50px;
-  }
   .small_heading{
-  font-style: italic;
-  color: #004d80;
+    font-style: italic;
+    color: #004d80;
   }
 </style> 
