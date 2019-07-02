@@ -55,6 +55,8 @@ Plots2::Application.routes.draw do
   get 'verify/:token' => 'users#verify_email'
   resources :relationships, only: [:create, :destroy]
 
+  get 'simple-data-grapher' => 'csvfiles#new'
+
   get '/wiki/:id/comments', to: 'wiki#comments'
   #resources :users
 
