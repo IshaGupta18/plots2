@@ -56,6 +56,7 @@ Plots2::Application.routes.draw do
   resources :relationships, only: [:create, :destroy]
 
   get 'simple-data-grapher' => 'csvfiles#new'
+  put 'simple-data-grapher/object' => 'csvfiles#setter'
 
   get '/wiki/:id/comments', to: 'wiki#comments'
   #resources :users
